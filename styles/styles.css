@@ -24,11 +24,11 @@ main img {
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
-    float:right;
+    /* float:right; */
 }
 
 p{
-    padding: 0px;
+    padding: 0;
 }
 
 main {
@@ -47,7 +47,6 @@ aside {
     background-color: #eee;
     color: #333;
     text-align: center;
-    position: relative;
 }
 
 aside img {
@@ -61,8 +60,7 @@ footer{
     text-align: center;
 }
 
-/* Class Selectors */
-
+/* Class Selectors  
 .box {
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -70,6 +68,6 @@ footer{
     background-color: rgb(129, 221, 255);
     color: #050000;
 }
-
+*/
 
 
