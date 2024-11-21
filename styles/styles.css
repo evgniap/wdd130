@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-nav{
+nav {
     background-color: steelblue;
     padding: 10px;
 }
@@ -24,7 +24,7 @@ main img {
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
-    /* float:right; */
+     float:right; 
 }
 
 p{
