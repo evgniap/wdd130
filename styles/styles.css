@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 nav {
-    background-color: steelblue;
+    background-color: rgb(9, 52, 88);
     padding: 10px;
 }
 
@@ -42,11 +42,12 @@ aside h2 {
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2) ;
+    border: 1px solid steelblue ;
     padding: 1rem;
     background-color: #eee;
     color: #333;
     text-align: center;
+    position: relative;
 }
 
 aside img {
@@ -60,7 +61,7 @@ footer{
     text-align: center;
 }
 
-Class Selectors  
+/* Class Selectors  */
 .box {
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
