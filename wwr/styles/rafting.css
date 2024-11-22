@@ -6,6 +6,7 @@
     --secondary-color: #FFFFFA;
     --accent1-color:#0091C2;
     --accent2-color:#21BCE3;
+    --background-color: #FFFFFF;
 
     --heading-font: 'Bebas Neue', Bebas;
     --paragraph-font: 'Noto Serif', serif;
@@ -65,12 +66,10 @@ nav a:hover {
     width: 100%;
     height: auto;
     float: right;
-    padding: 1rem;
+    padding: 2rem;
 }
 
-.hero div {
-    position: relative;
-}
+
 h1{
     position: absolute;
 }
@@ -78,6 +77,10 @@ article {
     position:absolute;
     background-color: #FFFFFA;
     opacity: 80%;
+}
+
+.hero div {
+    position: relative;
 }
 
 .hero article img {
