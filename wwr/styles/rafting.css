@@ -17,11 +17,11 @@
 }
 
 :root {
-    --primary-color: #027092;
-    --secondary-color: #FFFFFA;
+    --primary-color: #027092; /* #027092 */
+    --secondary-color: #FFFFFA ; /* #FFFFFA */
     --accent1-color:#0091C2;
-    --accent2-color:#21BCE3;
-    --background-color: #FFFFFF;
+    --accent2-color:#21BCE3; /* #21BCE */
+    --background-color: #ff0000; /* #FFFFFF */
 
     --heading-font: 'Bebas Neue', Bebas;
     --paragraph-font: 'Noto Serif', serif;
@@ -47,6 +47,17 @@ h1, h2 {
 header{
     padding: 20px;
     background-color: var(--secondary-color);
+    display:grid;
+    grid-template-columns: 500px 2fr 2fr 2fr;
+    align-items: center;
+    margin: 1rem auto;
+
+}
+
+header img {
+    display:grid;
+    align-content: center;
+    margin: 1rem auto;
 }
 
 p{
@@ -57,6 +68,7 @@ nav{
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display:flex;
+    flex-direction: row;
 }
 
 nav a{
@@ -75,13 +87,18 @@ nav a:hover {
     background-color: var(--nav-hover-background-color); ;
 }
 
-/* all good till this */
+main {
+    display: grid;
+    grid-auto-columns: minmax(100px, auto);
+    grid-auto-rows: minmax(100px, auto);
+    grid-row-gap: 20px;
+}
 .hero img{
     display: block;
     width: 100%;
     height: auto;
     float: right;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 
@@ -101,4 +118,64 @@ article {
 .hero article img {
     float: right;
     width: 200px;
+}
+
+
+
+.history {
+    display: grid;
+    grid-template-columns: 34% 33% 33%;
+    grid-row: auto;
+}
+
+.history h2 {
+    grid-column: 2;
+    place-self: center;
+
+}
+
+.history img{
+    width: 200px;
+    height: 200px;
+    grid-column:2;
+    place-self: center;
+}
+
+.history p1 {
+    grid-column: 1/2;
+    grid-row: 2;
+}
+
+.history p2 {
+    grid-column: 3/4;
+    grid-row: 2;
+}
+    
+.solo {
+    display: flex;
+    justify-self: center;
+}
+.figs {
+    display: flex;
+    padding-top: 10px;
+   flex-direction: row; 
+   align-content: space-evenly;
+
+} 
+
+.figs img{
+    width: 150px;
+    height: 150px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+.sociallinks {
+    display: flex;
+    flex-direction: row;
 }
