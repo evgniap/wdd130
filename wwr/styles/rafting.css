@@ -146,10 +146,17 @@ main {
     grid-template-rows: 100%;
 }
 
+.history h1 {
+    position: relative;
+    align-self: center;
+    justify-self: center;
+}
+
 .history h2 {
     display: flex;
     align-self: center;
     justify-content: center;
+    font-size: medium;
 
 }
 
@@ -203,14 +210,19 @@ footer {
 }
 
 /* CONTACT US CODE */
-h1 {
+.map h1 {
     display: flex;
     justify-content: center;
+    position: relative;
+    margin-top: 0;
+    margin-left: 350px;
 }
 
-h2{
+.team h2{
     display: flex;
-    justify-content: center;
+    justify-self: center;
+    position: relative;
+    margin-left: 350px;
 }
 
 /* MAP CODE */
