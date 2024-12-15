@@ -20,7 +20,7 @@
     --primary-color: #027092; /* #027092 */
     --secondary-color: #FFFFFA ; /* #FFFFFA */
     --accent1-color:#0091C2;
-    --accent2-color:#21BCE3; /* #21BCE3 */
+    --accent2-color:#21BCE3; /* #21BCE */
     --background-color: #FFFFFF; /* #FFFFFF */
 
     --heading-font: 'Bebas Neue', Bebas;
@@ -42,7 +42,7 @@ body{
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
-    
+    position: absolute;
 }
 
 h1 {
@@ -92,103 +92,59 @@ nav a:hover {
     background-color: var(--nav-hover-background-color); ;
 }
 
+/* ABOUT US CODE */
 main {
     display: grid;
     grid-auto-columns: minmax(100px, auto);
     grid-auto-rows: minmax(100px, auto);
     grid-row-gap: 20px;
 }
-
-/* BODY CODE */
-h1 {
-    display: flex;
-    justify-content: center;
-}
-
-h2{
-    display: flex;
-    justify-content: center;
-}
-
-/* MAP CODE */
-
-.map {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content:space-around;
-    border: 10px solid #027092;
-}
-
-.map p {
-    padding: 0;
-}
-
-.map li {
-    padding: 1.2rem;
-}
-.map iframe{
-    width: 40%;
-    height: 60%;
-    justify-items: flex-end;
-}
-
- /* TEAM CODE */
-.team {
-    display:flex;
-    flex-direction: row;
-    align-content: space-between;
- }
-
-.team img {
-    height: 300px;
-    width: 300px;
-    border-radius: 90%;
-}
-
-.team figcaption {
-    display: flex;
-    justify-items: center;
-}
-
-/* FORM CODE */
-form{
-    display: block;
-    justify-items: center;
-}
-fieldset {
-    border-color: #0091C2;
-    position: relative;
-    display: grid;
-    /*grid-column: 5px;
-    grid-row: 5px;*/
-    width: 50%
-}
-legend{
-  position: relative;
-}
-
-input{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    width:50%;
+.hero div {
     position: relative;
 }
 
-button {
-    justify-self: center;
-}
 
-/* FOOTER CODE */
-.wiref {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.hero h1{
+    display:block;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 350px;
     
 }
 
-.wiref nav {
-    display: inline;
-    padding: 0%;
+.hero article {
+    position:absolute;
+    background-color: #FFFFFA;
+    opacity: 90%;
+    margin-top: 250px;
+    margin-left: -20px;
+    margin-right: 290px;
+    margin-bottom: 250px;
+}
+
+
+.hero img{
+    display: block;
+    width: 100%;
+    height: auto;
+    float: right;
+    padding: 1rem;
+    opacity:100%;
+    
+}
+
+.homegrid {
+    display:grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 50% 50%;
+}
+
+.forme {
+    grid-column: 2/3;
+    grid-row: 2;
+}
+
+.indexf {
+    grid-column: 3/4;
+    grid-row: 2;
 }
