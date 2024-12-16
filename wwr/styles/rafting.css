@@ -109,6 +109,10 @@ main {
     position: absolute;
     margin-top: 150px;
     margin-left: 350px;
+    margin-bottom: 140px;
+    font-size: 4em;
+    background-color: #FFFFFA;
+    opacity: 80%;
     
 }
 
@@ -154,9 +158,9 @@ main {
 
 .history h2 {
     display: flex;
-    align-self: center;
-    justify-content: center;
-    font-size: medium;
+    align-self: flex-start;
+    justify-self: center;
+    font-size: 3em;
 
 }
 
@@ -181,13 +185,20 @@ main {
     
 .solo {
     display: flex;
+    align-self: center;
     justify-self: center;
+    font-size: 2.5em;
+    border-bottom: 5px solid #027092;
+    margin-left: 300px;
+
 }
 .figs {
     display: flex;
     padding-top: 10px;
    flex-direction: row; 
    align-content: space-evenly;
+   margin-top: 100px;
+   
 
 } 
 
