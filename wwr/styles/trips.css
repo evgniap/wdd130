@@ -98,25 +98,21 @@ nav a:hover {
 
 .trips {
     display:grid;
-    grid-template-columns: 50% 1fr;
+    grid-column-gap: 1rem;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 40% 60%;
     grid-template-areas: 
-    'table' 'article' 
-    'section' 
+    'table' 'section'
+    'table' 'article'
     ;
-    
-
 }
+
 .tocontact section {
     justify-content: end;
     align-content: end;
 }
-.trips article {
-    grid-column: 2/3;
-    grid-row: 2/4;
 
-}
-
+/* TABLE CODE */
 .table table {
         align-items: center;
         border-collapse: collapse;
@@ -124,6 +120,7 @@ nav a:hover {
         font-family: var(--paragraph-font);
         font-size: 0.8rem;
         letter-spacing: 1px;
+        margin-top: 90px;
       }
 
 .table td {
@@ -133,22 +130,52 @@ nav a:hover {
 .table tbody > tr:nth-of-type(even) {
         background-color:#21BCE3;
       }
-      
 
+/* CONTACT CODE */
+      
+.tocontact img {
+    align-self: center;
+    width: 100%;
+    height: 20%;
+    margin-top: 100px;
+}
+
+.tocontact div {
+    margin: 10px auto;
+    position: relative;
+    border: 10px solid #027092;
+}
+
+/* PICTURES CODE */
 
 .tripf {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
+    align-self: flex-end;
+    margin-top: 100px; 
+    margin-left: 490px;
     
 }
+
+
 
 .tripf img {
     width: 200px;
     height: 200px;
 }
-
-.titlest h1 {
+/* TITLES CODE */
+.titlet h1 {
     display: flex;
-    justify-content: start;
-    align-items: start;
+    justify-content: center;
+    align-self: flex-start;
+    font-size: 1.5rem;
+   
+}
+
+.tripf h2 {
+    font-size: 1.3rem;
+    position: absolute;
+    display:flex;
+    align-content: start;
+    
 }
